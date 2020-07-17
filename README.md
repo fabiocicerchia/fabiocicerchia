@@ -12,3 +12,5 @@ now Engineer @ [Radical](https://radicalstorage.com).
 - 📓 I'm (randomly) blogging on [DevPath](https://devpath.pro), wrote about [Practical Estimates](https://devpath.pro/project-management/practical-estimates/), [Web Performances](https://leanpub.com/webperformances) and [IT Metrics](https://leanpub.com/itmetricsinreallife).
 - 📫 How to reach me: [Twitter](https://twitter.com/fabiocicerchia) and [LinkedIn](https://www.linkedin.com/in/fabiocicerchia/).
 - 💗 You can [sponsor my work](https://github.com/sponsors/fabiocicerchia).
+
+![counter](https://en5dh240q777k03.m.pipedream.net)
