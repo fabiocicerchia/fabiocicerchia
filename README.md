@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'm Fabio, a **Passionate Solutions Architect and Application Developer** with **over 15 years** of experience.
+I'm Fabio, a **Passionate Solutions Architect and Application Developer** with **~20 years** of experience.
 Always enjoying creating *quality web applications and web portals* using **cutting-edge technologies**.
 
 Always focused on software *maintainability*, *scalability*, *reliability*, and *performances*. [Former CTO](https://devpath.pro/career/why-i-stepped-down-as-cto/),
