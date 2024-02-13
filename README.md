@@ -1,16 +1,13 @@
 ### Hi there 👋
 
-I'm Fabio, a **Passionate Solutions Architect and Application Developer** with **~20 years** of experience.
-Always enjoy creating *quality web applications and web portals* using **cutting-edge technologies**.
+I'm Fabio, a **Passionate Engineer** and **Engineering Manager** with nearly 2 decades of expertise.
+Focused on optimising *Architecture* & *Infrastructure* (Containers & VMs), as well as *Processes* (Pipelines & Deployments).
 
-Always focused on software *maintainability*, *scalability*, *reliability*, and *performances*. [Former CTO](https://devpath.pro/career/why-i-stepped-down-as-cto/),
-now Engineering Manager @ [Treatwell](https://treatwell.com).
+*Bringing value to the company by helping engineering teams in delivering value faster with higher standards.*
 
-*Constantly looking for opportunities and challenges to improve my skills while providing creative and high-quality solutions.*
-
-- 🔭 I'm currently working on [Nginx & Lua Docker Container](https://github.com/fabiocicerchia/nginx-lua), [Go Proxy Cache](https://github.com/fabiocicerchia/go-proxy-cache), [Developer's Learning Path](https://github.com/fabiocicerchia/dev-learning-path) and [Badge-Poser](https://github.com/PUGX/badge-poser).
-- 🦄 Founded [AmIFrom.eu](https://gum.co/amifromeu), [DXpertise](https://www.producthunt.com/@dxpertise_com), [StuckRemotely](https://buildforcovid19.io/stuckremotely/), [WScore](https://www.capterra.com/p/185260/WScore/).
-- 📓 I'm (randomly) [blogging](https://fabiocicerchia.it/blog), wrote about [Practical Estimates](https://fabiocicerchia.it/project-management/practical-estimates/), [10x Software Engineer](https://leanpub.com/10xse), [Web Performances](https://leanpub.com/webperformances) and [IT Metrics](https://leanpub.com/itmetricsinreallife).
+- 🔭 I'm currently working on [Nginx & Lua Docker Container](https://github.com/fabiocicerchia/nginx-lua), [Go Proxy Cache](https://github.com/fabiocicerchia/go-proxy-cache), and [Badge-Poser](https://github.com/PUGX/badge-poser).
+- 🦄 Founded [Kodebeat](https://kodebeat.com), [DXpertise](https://www.producthunt.com/@dxpertise_com), [StuckRemotely]([https://buildforcovid19.io/stuckremotely/](https://devpost.com/software/stuckremotely), [WScore](https://www.capterra.com/p/185260/WScore/).
+- Randomly [blogging](https://fabiocicerchia.it/blog) and maintaining a [newsletter](https://devpath.substack.com/), wrote about [10x Software Engineer](https://leanpub.com/10xse), [Disaster Recovery](https://leanpub.com/savefromdisaster), [IT Metrics](https://leanpub.com/itmetricsinreallife), [Practical Estimates](https://devpath.pro/project-management/practical-estimates/), and [Web Performances](https://leanpub.com/webperformances).
 - 🎤 Randomly speaking at [PUG Roma](https://roma.grusp.org/?s=fabio+cicerchia).
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/fabiocicerchia/).
 - 💗 You can [sponsor my work](https://github.com/sponsors/fabiocicerchia).
