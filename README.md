@@ -6,7 +6,7 @@ Focused on optimising *Architecture* & *Infrastructure* (Containers & VMs), as w
 *Bringing value to the company by helping engineering teams in delivering value faster with higher standards.*
 
 - 🔭 I'm currently working on [Nginx & Lua Docker Container](https://github.com/fabiocicerchia/nginx-lua), [Go Proxy Cache](https://github.com/fabiocicerchia/go-proxy-cache), and [Badge-Poser](https://github.com/PUGX/badge-poser).
-- 🦄 Founded [Kodebeat](https://kodebeat.com), [DXpertise](https://www.producthunt.com/@dxpertise_com), [StuckRemotely]([https://buildforcovid19.io/stuckremotely/](https://devpost.com/software/stuckremotely), [WScore](https://www.capterra.com/p/185260/WScore/).
+- 🦄 Founded [Kodebeat](https://kodebeat.com), [DXpertise](https://www.producthunt.com/@dxpertise_com), [StuckRemotely](https://devpost.com/software/stuckremotely), [WScore](https://www.capterra.com/p/185260/WScore/).
 - Randomly [blogging](https://fabiocicerchia.it/blog) and maintaining a [newsletter](https://devpath.substack.com/), wrote about [10x Software Engineer](https://leanpub.com/10xse), [Disaster Recovery](https://leanpub.com/savefromdisaster), [IT Metrics](https://leanpub.com/itmetricsinreallife), [Practical Estimates](https://devpath.pro/project-management/practical-estimates/), and [Web Performances](https://leanpub.com/webperformances).
 - 🎤 Randomly speaking at [PUG Roma](https://roma.grusp.org/?s=fabio+cicerchia).
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/fabiocicerchia/).
