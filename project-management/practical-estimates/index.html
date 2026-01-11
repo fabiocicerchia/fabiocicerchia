@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-GB" prefix="og: https://ogp.me/ns#">
+
+	<head><meta http-equiv="content-type" content="text/html" charset="UTF-8">
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+
+		<title>Practical Estimates - Fabio Cicerchia</title>
+
+		<!-- All in One SEO 4.9.3 - aioseo.com -->
+	<meta name="description" content="It all started while working as CTO (first-time though) at Skuola.net and attending the conference Codemotion Rome 2019, I was listening to Daiany Palacios talking about hers “The trap of averages. How to avoid it in software development estimates” in particular about doing estimates using the Montecarlo method. That moment something triggered in me, like">
+	<meta name="robots" content="max-image-preview:large">
+	<meta name="author" content="fabio">
+	<link rel="canonical" href="/project-management/practical-estimates">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.9.3">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:site_name" content="Fabio Cicerchia - Helping teams scale smarter, greener, faster.">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Practical Estimates - Fabio Cicerchia">
+		<meta property="og:description" content="It all started while working as CTO (first-time though) at Skuola.net and attending the conference Codemotion Rome 2019, I was listening to Daiany Palacios talking about hers “The trap of averages. How to avoid it in software development estimates” in particular about doing estimates using the Montecarlo method. That moment something triggered in me, like">
+		<meta property="og:url" content="/project-management/practical-estimates">
+		<meta property="article:published_time" content="2019-12-01T11:45:27+00:00">
+		<meta property="article:modified_time" content="2019-12-01T11:45:27+00:00">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@fabiocicerchia">
+		<meta name="twitter:title" content="Practical Estimates - Fabio Cicerchia">
+		<meta name="twitter:description" content="It all started while working as CTO (first-time though) at Skuola.net and attending the conference Codemotion Rome 2019, I was listening to Daiany Palacios talking about hers “The trap of averages. How to avoid it in software development estimates” in particular about doing estimates using the Montecarlo method. That moment something triggered in me, like">
+		<meta name="twitter:creator" content="@fabiocicerchia">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"\/project-management\/practical-estimates#blogposting","name":"Practical Estimates - Fabio Cicerchia","headline":"Practical Estimates","author":{"@id":"\/author\/fabio#author"},"publisher":{"@id":"\/#person"},"image":{"@type":"ImageObject","url":"https:\/\/assets.amuniversal.com\/eef21780583c0135def8005056a9545d","@id":"\/project-management\/practical-estimates\/#articleImage"},"datePublished":"2019-12-01T12:45:27+00:00","dateModified":"2019-12-01T12:45:27+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"\/project-management\/practical-estimates#webpage"},"isPartOf":{"@id":"\/project-management\/practical-estimates#webpage"},"articleSection":"Project Management, agile, development, estimation, management, noestimate, project management"},{"@type":"BreadcrumbList","@id":"\/project-management\/practical-estimates#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"#listItem","position":1,"name":"Home","item":"","nextItem":{"@type":"ListItem","@id":"\/category\/project-management#listItem","name":"Project Management"}},{"@type":"ListItem","@id":"\/category\/project-management#listItem","position":2,"name":"Project Management","item":"\/category\/project-management","nextItem":{"@type":"ListItem","@id":"\/project-management\/practical-estimates#listItem","name":"Practical Estimates"},"previousItem":{"@type":"ListItem","@id":"#listItem","name":"Home"}},{"@type":"ListItem","@id":"\/project-management\/practical-estimates#listItem","position":3,"name":"Practical Estimates","previousItem":{"@type":"ListItem","@id":"\/category\/project-management#listItem","name":"Project Management"}}]},{"@type":"Person","@id":"\/#person","name":"fabio"},{"@type":"Person","@id":"\/author\/fabio#author","url":"\/author\/fabio","name":"fabio"},{"@type":"WebPage","@id":"\/project-management\/practical-estimates#webpage","url":"\/project-management\/practical-estimates","name":"Practical Estimates - Fabio Cicerchia","description":"It all started while working as CTO (first-time though) at Skuola.net and attending the conference Codemotion Rome 2019, I was listening to Daiany Palacios talking about hers \u201cThe trap of averages. How to avoid it in software development estimates\u201d in particular about doing estimates using the Montecarlo method. That moment something triggered in me, like","inLanguage":"en-GB","isPartOf":{"@id":"\/#website"},"breadcrumb":{"@id":"\/project-management\/practical-estimates#breadcrumblist"},"author":{"@id":"\/author\/fabio#author"},"creator":{"@id":"\/author\/fabio#author"},"datePublished":"2019-12-01T12:45:27+00:00","dateModified":"2019-12-01T12:45:27+00:00"},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"Fabio Cicerchia","description":"Helping teams scale smarter, greener, faster.","inLanguage":"en-GB","publisher":{"@id":"\/#person"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="dns-prefetch" href="">
+<link rel="alternate" type="application/rss+xml" title="Fabio Cicerchia » Feed" href="/feed">
+<link rel="alternate" type="application/rss+xml" title="Fabio Cicerchia » Comments Feed" href="/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="Fabio Cicerchia » Practical Estimates Comments Feed" href="/project-management/practical-estimates/feed">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fproject-management%2Fpractical-estimates">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fproject-management%2Fpractical-estimates&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #121212;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #333;--wp--preset--color--medium-gray: #555;--wp--preset--color--light-gray: #777;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 16px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 18px;--wp--preset--font-size--larger: 28px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel="stylesheet" id="mcluhan-fonts-css" href="/wp-content/themes/mcluhan/assets/css/fonts.css?ver=6.9" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="/wp-content/themes/mcluhan/assets/css/font-awesome.css?ver=6.9" type="text/css" media="all">
+<link rel="stylesheet" id="mcluhan-style-css" href="/wp-content/themes/mcluhan/style.css?ver=2.1.1" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/624"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9">
+<link rel="shortlink" href="/?p=624">
+
+			<!-- Customizer CSS -->
+
+			<style type="text/css">
+
+				
+			</style>
+
+			<!-- /Customizer CSS -->
+
+					<script>jQuery( 'html' ).removeClass( 'no-js' ).addClass( 'js' );</script>
+		<style type="text/css">.blue-message {
+    background-color: #3399ff;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.green-message {
+    background-color: #8cc14c;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.orange-message {
+    background-color: #faa732;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.red-message {
+    background-color: #da4d31;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.grey-message {
+    background-color: #53555c;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.left-block {
+    background: radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%);
+    color: #8b8e97;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
+}.right-block {
+    background: radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%);
+    color: #8b8e97;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: right;
+}.blockquotes {
+    background-color: none;
+    border-left: 5px solid #f1f1f1;
+    color: #8B8E97;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+    padding-left: 15px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+    float: left;
+}</style>		<style type="text/css" id="wp-custom-css">
+			.site-title { font-size: 1.5em; font-weight: bold; }
+.site-description { font-style: italic; }
+body.home, .home main { background: #121212; color: white; }
+.home footer { display: none; }
+* { font-family: 'Ubuntu', sans-serif; }
+.section-inner { max-width: none; width: 65%; }
+.wp-block-post .has-background { color: white; }
+.post-1989 .entry-content { padding-top: 100px; }
+:where(.wp-block-cover-image:not(.has-text-color)), :where(.wp-block-cover:not(.has-text-color)) { color: black; }
+.entry-content .wp-block-file { flex-wrap: wrap; }
+.wp-block-post-author { display:none; }
+.wp-block-post-author + .has-xsmall-font-size { display:none; }		</style>
+				<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+
+	</head>
+
+	<body class="wp-singular post-template-default single single-post postid-624 single-format-standard wp-theme-mcluhan hide-social">
+
+		
+		<a class="skip-link button" href="#site-content">Skip to the content</a>
+
+		<header class="site-header group">
+
+			
+			<p class="site-title"><a href="/" class="site-name">Fabio Cicerchia</a></p>
+
+			
+				<div class="site-description"><p>Helping teams scale smarter, greener, faster.</p>
+</div>
+
+			
+			<div class="nav-toggle">
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+
+			<div class="menu-wrapper">
+
+				<ul class="main-menu desktop">
+
+					<li id="menu-item-2177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2177"><a href="/about-me">About me</a></li>
+<li id="menu-item-2176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"><a href="/resume">Resume</a></li>
+<li id="menu-item-2179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2179"><a href="/newsletter">Newsletter</a></li>
+<li id="menu-item-2175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2175"><a href="/projects">Projects</a></li>
+<li id="menu-item-2292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="/books">Books</a></li>
+<li id="menu-item-2178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2178"><a href="/mentoring">Mentoring</a></li>
+<li id="menu-item-2174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2174"><a href="/talks">Talks</a></li>
+<li id="menu-item-2173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2173"><a href="/blog">Blog</a></li>
+				</ul>
+
+			</div><!-- .menu-wrapper -->
+
+			
+		</header><!-- header -->
+
+		<div class="mobile-menu-wrapper">
+
+			<ul class="main-menu mobile">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2177"><a href="/about-me">About me</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"><a href="/resume">Resume</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2179"><a href="/newsletter">Newsletter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2175"><a href="/projects">Projects</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="/books">Books</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2178"><a href="/mentoring">Mentoring</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2174"><a href="/talks">Talks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2173"><a href="/blog">Blog</a></li>
+			</ul><!-- .main-menu.mobile -->
+
+			
+		</div><!-- .mobile-menu-wrapper -->
+
+		
+		<main class="site-content" id="site-content">
+		<article class="post-624 post type-post status-publish format-standard hentry category-project-management tag-agile tag-development tag-estimation tag-management tag-noestimate tag-project-management missing-thumbnail">
+
+			
+			<header class="entry-header section-inner">
+
+				<h1 class="entry-title">Practical Estimates</h1>
+					<div class="meta">
+
+						<time><a href="/project-management/practical-estimates">December 1, 2019</a></time>
+
+						
+							<span>
+								In <a href="/category/project-management" rel="category tag">Project Management</a>							</span>
+
+						
+					</div>
+
+				
+			</header><!-- .entry-header -->
+
+			<div class="entry-content section-inner">
+
+				<div>It all started while working as CTO (first-time though) at <a href="http://skuola.net/">Skuola.net</a> and attending the conference Codemotion Rome 2019, I was listening to <a href="https://twitter.com/DaianyMargarita">Daiany Palacios</a> talking about hers “<a href="https://www.slideshare.net/DaianyPalacios/the-trap-of-averages-how-to-avoid-it-in-software-development-estimates">The trap of averages. How to avoid it in software development estimates</a>” in particular about doing estimates using the <a href="https://www.infoq.com/news/2019/04/monte-carlo-agile-estimation/">Montecarlo method</a>. That moment something triggered in me, like an epiphany… I had put a lot of effort into my process improvements, but that was another spark to keep raising the bar again.</div>
+<div>Then during a job interview, some time later, I’ve got asked about my method, and they were interested in my approach.</div>
+<div>This episode, a few days later, got me thinking that maybe I could share it to the world 😉</div>
+<div>Since it kinda worked for me most of the times (let’s say 80% of the times), I could have formalised it and tried to fix the weak spots. So here it is.</div>
+<div>This method is only valid at some stage of company maturity, early ones could benefit from it, mature one could avoid it entirely. It depends on the company’s needs.</div>
+<p><span id="more-624"></span></p>
+<div>How did I come up with Practical Estimates? It was mainly to let the concept be transparent with the name and to make the adoption easier. Difficult names will make harder for the management to buy the concept, here are some failed attempts:</div>
+<ul>
+<li><em>Skipped Estimates</em>: no-one wants really to skip them</li>
+<li><em>Quick &amp; Dirty Estimates</em>: management wants precision</li>
+<li><em>Fair Estimates</em>: too crowded on Google because of “fare estimate”</li>
+<li><em>Guesstimates</em>: terms like “guess” or “opinion” won’t work because very subjective</li>
+<li><em>Practical Projection</em>: changing the term estimate would confuse the management in the lexicon</li>
+<li><em>Sensible Estimates</em>: it could work, but still not buyable enough</li>
+<li><strong>Practical Estimates</strong>: boom! They want estimates and gonna get it, plus they are practical which is a bonus because the process is fairly quick.</li>
+</ul>
+<h2>Concepts</h2>
+<ul>
+<li>No crazy formulas</li>
+<li><a href="https://www.projectmanagement.com/blog-post/61894/Introduction-to-Rolling-Wave-Planning">Rolling Wave Planning</a></li>
+<li>Effort estimation</li>
+<li>Complexity estimation</li>
+<li>Time estimation</li>
+</ul>
+<h2>Why?!</h2>
+<p><span style="color: #000000;">Because…</span></p>
+<blockquote><p>What management really means is that estimates are promises — even forced estimates — and the team needs to keep their “promises,” even if they never promised.<br>
+<a href="https://web.archive.org/web/20200512154710/https://pragprog.com/magazines/2013-02/estimation-is-evil">Ron Jeffries</a></p></blockquote>
+<figure style="width: 700px" class="wp-caption alignnone"><a href="https://dilbert.com/strip/2017-08-19"><img fetchpriority="high" decoding="async" class="" src="https://assets.amuniversal.com/eef21780583c0135def8005056a9545d" alt="Estimate Of Timeline - Dilbert by Scott Adams" width="700" height="218"></a><figcaption class="wp-caption-text">Estimate Of Timeline – Dilbert by Scott Adams</figcaption></figure>
+<blockquote><p>With 90% of work done, the remaining 10% is refining the requirement, misread details, small UI-UX tweaks, blockers, code-review comments, build failure, etc. This 10% is highly underestimated and consumes significant time.<br>
+<a href="https://medium.com/hackernoon/underestimating-estimation-d2e52372f303">Ranganathan Balashanmugam</a></p></blockquote>
+<figure style="width: 900px" class="wp-caption alignnone"><a href="https://dilbert.com/strip/2013-08-31"><img decoding="async" src="https://assets.amuniversal.com/d18c1ce0e21f013002ff001dd8b71c47" alt="Dilbert by Scott Adams" width="900" height="280"></a><figcaption class="wp-caption-text">Dilbert by Scott Adams</figcaption></figure>
+<blockquote><p>Individuals often consider the best possible outcome.<br>
+<a href="https://www.sicotests.com/psyarticle.asp?id=385">Dr Simon Moss</a></p></blockquote>
+<figure style="width: 900px" class="wp-caption alignnone"><a href="https://dilbert.com/strip/2016-10-20"><img decoding="async" src="https://assets.amuniversal.com/5b32eb906c790134d06d005056a9545d" alt="Different Time Estimates - Dilbert by Scott Adams" width="900" height="281"></a><figcaption class="wp-caption-text">Different Time Estimates – Dilbert by Scott Adams</figcaption></figure>
+<h2>Company Maturity Assessment</h2>
+<div>This concept is based on Frederic Laloux’s definition in his book “<a href="https://amzn.to/3VOHRFv">Reinventing Organizations: A Guide to Creating Organizations Inspired by the Next Stage of Human Consciousness</a>“</div>
+<table>
+<tbody>
+<tr>
+<td><strong>Colour</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Guiding Metaphor</strong></td>
+<td><strong>Key Breakthroughs</strong></td>
+<td><strong>Current Examples</strong></td>
+</tr>
+<tr>
+<td><span style="color: red;">RED</span></td>
+<td>Constant exercise of power by the chief to keep foot soldiers in line.
+<p>Highly reactive, short-term focus. Thrives in chaotic environments.</p></td>
+<td>Wolf pack</td>
+<td>
+<ul>
+<li>Division of labour</li>
+<li>Command authority</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Organised crime</li>
+<li>Street gangs</li>
+<li>Tribal militias</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span style="color: #ffcc00;">AMBER</span></td>
+<td>Highly formal roles within a hierarchical pyramid.
+<p>Top-down command and control. Future is the repetition of the past.</p></td>
+<td>Army</td>
+<td>
+<ul>
+<li>Formal roles (stable and scalable hierarchies)</li>
+<li>Stable, replicable processes (long-term perspectives)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Catholic Church</li>
+<li>Military</li>
+<li>Most government organisations (public school systems, police departments)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span style="color: orange;">ORANGE</span></td>
+<td>Goal is to beat the competition, achieve profit and growth.
+<p>Management by objectives (command and control over what, freedom over how)</p></td>
+<td>Machine</td>
+<td>
+<ul>
+<li>Innovation</li>
+<li>Accountability</li>
+<li>Meritocracy</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Multinational companies</li>
+<li>Investment banks</li>
+<li>Charter schools</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span style="color: green;">GREEN</span></td>
+<td>Focus on culture and empowerment to boost employee motivation.
+<p>Stakeholders replace shareholders as the primary purpose.</p></td>
+<td>Family</td>
+<td>
+<ul>
+<li>Empowerment</li>
+<li>Equalitarian management</li>
+<li>Stakeholder model</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Businesses that are known for idealistic practices (Ben &amp; Jerry’s, Southwest Airlines, Starbucks, Zappos)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span style="color: teal;">TEAL</span></td>
+<td>Self-management replaces the hierarchical pyramid.
+<p>Organisations are seen as living entities oriented towards realising their potential.</p></td>
+<td>Living organism</td>
+<td>
+<ul>
+<li>Self-management</li>
+<li>Wholeness</li>
+<li>Evolutionary purpose</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>A few pioneering organisations (Patagonia, Buurtzorg, FAVI, Morning Star, ESBZ)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div>Source: Frederic Laloux, Reinventing Organizations [Nelson Parker, 2014]</div>
+<div></div>
+<div>Check your organisation with the following assessment: <a href="https://www.beyondteal.com/teal-organizational-readiness-assessment">https://www.beyondteal.com/teal-organizational-readiness-assessment</a></div>
+<div></div>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>ℹ️ Info: </strong>This estimation method is mostly applicable in red/amber/orange organisations.</div>
+<h2>Notes</h2>
+<ul>
+<li>Not everyone is lucky enough to have the top management buy smoothly the uncertainty and the software lifecycle without many deadlines or de-scoping functionalities. See <a href="https://amzn.to/3Q0XKau">No Estimates</a>.</li>
+<li>I’ve tried this method with a fairly small team of 7 people.</li>
+</ul>
+<h2>The 4 Key Processes</h2>
+<h3>Sorting Process</h3>
+<ul>
+<li>Use the <a href="https://devpath.pro/time-management/practicality-eisenhower-matrix/">Eisenhower Matrix</a> to group items together</li>
+<li>Focus only on Urgent-Important, Urgent-Not Important, Not Urgent-Important (in this order)
+<ul>
+<li>Urgent-Important: We know we cannot do everything right now, so they’re gonna be planned</li>
+<li>Urgent-Not Important: It’s just urgent postponable stuff, but unfortunately is “urgent”</li>
+<li>Not Urgent-Important: Real schedulable work</li>
+<li>What about Not Urgent-Not Important: Let them stack up in the backlog, some day you’ll prune…</li>
+</ul>
+</li>
+<li>Within a sector order by priority
+<ul>
+<li>Use any relevant metric: urgency, complexity, date, profitability, and so on</li>
+</ul>
+</li>
+</ul>
+<h3>Estimation Process</h3>
+<ol>
+<li>Get a prioritised tasklist following this order:
+<ol>
+<li>Urgent-Important</li>
+<li>Urgent-Not Important</li>
+<li>Not Urgent-Important</li>
+</ol>
+</li>
+<li>Do <a href="https://www.productplan.com/glossary/affinity-grouping/">Affinity Grouping</a> based on the type of the activity: issues, task, enhancement, feature</li>
+<li>Do your estimation of a task based on the historical data of how long in average it took based on the activity type
+<ol>
+<li>Each activity type has different timings, the time to fix an issue it is different from building a new feature. So treat them differently to achieve a better precision</li>
+</ol>
+</li>
+<li>Review with the team if the estimates sound roughly good enough</li>
+</ol>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>ℹ️ Info:</strong> Do have a look at <a style="font-size: 0.95em;" href="https://amzn.to/3jG3KsS">No Estimates</a> since the concept is great, you’ll find more interesting topics that will help you.</div>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>ℹ️ Info:</strong> We are bad at estimating and each one takes into account his perspective. To be objective we need to be backed by data, even if it’s not precise.</div>
+<div>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>ℹ️ Info:</strong> Try to gather as much data as possible about the historical lead time or worked time from project tracking tools by querying directly their internal database. For example, if you use self-hosted GitLab or Jira you can access their PostgreSQL database and harvest data.</div>
+</div>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>⚠️ Pay Attention:</strong> There should be no link between <a href="https://en.wikipedia.org/wiki/Planning_poker">abstract units</a> (Fibonacci series, t-shirt sizes, and so on) and time. Remember that the management cares about time, it’s how human measure things. They will find a way to hack any framework to map it to working days.</div>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>⚠️ Pay Attention: </strong>Each team must have its own estimation (they cannot be mixed up) and they should be added together to obtain the final figure.</div>
+<h3>Planning Process</h3>
+<ol>
+<li>Use a <a href="https://en.wikipedia.org/wiki/Gantt_chart">Gantt Chart</a> to help you visualise the workload</li>
+<li>Plan the work across different resources
+<ol>
+<li>Plan at 70% <a href="https://en.wikipedia.org/wiki/Capacity_planning">capacity</a> (think about sick days, holidays, meetings, …)</li>
+</ol>
+</li>
+<li>Cut out whatever is not in the defined time span</li>
+<li>Review with the team the Gantt Chart</li>
+</ol>
+<p>You could use a schedule like the following one:</p>
+<ul>
+<li>Monday – Thursday: work on urgent issues and scheduled work</li>
+<li>Friday: work on support issues and repaying technical debt.</li>
+</ul>
+<h3>Execution Process</h3>
+<ol>
+<li>Each week check the progress</li>
+<li>Swap task assigned to resources whenever someone finishes all his/her workload</li>
+<li>Deliver each week part of the work, use a <a href="https://martinfowler.com/articles/feature-toggles.html">Feature Flag</a> approach to make sure you can control the impact of the functionality.</li>
+</ol>
+<div style="padding: 1em; width: 80%; border: 1px solid #AAA; margin-bottom: 1em;"><strong>ℹ️ Remember: </strong>Agile is about fixed time and cost and flexible scope. For more details check the <a href="https://en.wikipedia.org/wiki/Project_management_triangle">Quality Triangle</a>.</div>
+<h2>Pro &amp; Cons</h2>
+<div>Pro:</div>
+<ul>
+<li>Quick estimates</li>
+<li>Saving the time of the team</li>
+<li>Enough precision</li>
+</ul>
+<div>Cons:</div>
+<ul>
+<li>Not enough precision</li>
+<li>Requires constant checkpoints</li>
+</ul>
+<h2>Measuring</h2>
+<p>Rather than measuring using the classic velocity metric, it is way better to do the math based on the Running Tested Features. RTF has 3 main benefits:</p>
+<ul>
+<li>It is Running, hence it has been released in production, creating value for the end-users.</li>
+<li>It is Tested, meaning that it has been validated in different stages: unit testing, functional testing, integration testing and acceptance testing.</li>
+<li>It is a Feature, meaning that has real value for the end-users.</li>
+</ul>
+<p>If you find you’re going to miss the planned deadline try to give as much notice as possible, in this way you can act accordingly and try to limit the damage. Also, make sure this kind of events are rare and you don’t miss too many deadlines, otherwise it’ll take a toll on the team’s morale.</p>
+<h2>Tools</h2>
+<p>Use burn-up charts for better visibility of changes of scope (which happens all the time).</p>
+<p><a href="http://www.clariostechnology.com/productivity/blog/whatisaburnupchart"><img loading="lazy" decoding="async" class="alignnone" src="http://www.clariostechnology.com/images/blog/burnup.png" alt="burn up chart" width="409" height="238"></a></p>
+<blockquote><p>A burnup chart clearly shows both completed work and project scope. The project will be completed when the lines meet.</p></blockquote>
+<blockquote><p>The advantage of a burn up chart over a burn down chart is the inclusion of the scope line. It clearly tracks when work has been added to or removed from the project.</p></blockquote>
+<h2>References</h2>
+<ul>
+<li><a href="https://www.sicotests.com/psyarticle.asp?id=385">The planning fallacy</a></li>
+<li><a href="https://martinfowler.com/bliki/ThrownEstimate.html">ThrownEstimate</a></li>
+<li><a href="https://hackernoon.com/underestimating-estimation-d2e52372f303">Underestimating Estimation</a></li>
+<li><a href="https://martinfowler.com/bliki/PurposeOfEstimation.html">PurposeOfEstimation</a></li>
+<li><a href="https://web.archive.org/web/20200512154710/https://pragprog.com/magazines/2013-02/estimation-is-evil">Estimation is Evil</a></li>
+<li><a href="http://lifehacker.com/what-to-do-when-you-miss-a-deadline-at-work-1655116937">What to Do When You Miss a Deadline at Work</a></li>
+<li><a href="https://riter.co/blog/moving-toward-teal-company-s-workflow">Moving Toward Teal Company’s Workflow</a></li>
+<li><a href="https://agileforall.com/agile-antipattern-everything-is-priority-1/">Agile Antipattern: Everything is priority 1</a></li>
+<li><a href="https://luis-goncalves.com/agile-retrospectives-exercise-daki/">DAKI – DROP, ADD, KEEP, IMPROVE</a></li>
+<li><a href="https://www.infoq.com/news/2019/04/monte-carlo-agile-estimation">Web-Based Monte Carlo Simulation for Agile Estimation</a></li>
+<li><a href="http://www.forbes.com/sites/stevedenning/2015/01/26/why-do-managers-hate-agile/">Why Do Managers Hate Agile?</a></li>
+<li><a href="http://www.mhwilleke.com/aligning-workplace-learning-to-organisational-paradigms">Aligning Workplace Learning to Organisational Paradigms</a></li>
+<li><a href="https://shoremount.kayako.com/article/86-what-are-laloux-s-evolutionary-breakthroughs-in-human-collaboration">What are Laloux’s “Evolutionary Breakthroughs in Human Collaboration”?</a></li>
+<li><a href="https://medium.com/why-it-is-time-to-re-design-company-structures/2-evolutionary-context-of-organisational-structures-dddaaa650ab5">2. Evolutionary Context of Organisational Structures</a></li>
+<li><a href="http://www.clariostechnology.com/productivity/blog/whatisaburnupchart">What is a burn up chart?</a></li>
+<li><a href="https://www.infosysblogs.com/application-services/2013/06/agile_metrics_-_running_tested.html">Agile Metrics – Running Tested Features</a></li>
+</ul>
+
+			</div> <!-- .content -->
+
+			
+				<div class="meta bottom section-inner">
+					<p class="tags"> #<a href="/tag/agile" rel="tag">agile</a> #<a href="/tag/development" rel="tag">development</a> #<a href="/tag/estimation" rel="tag">estimation</a> #<a href="/tag/management" rel="tag">management</a> #<a href="/tag/noestimate" rel="tag">noestimate</a> #<a href="/tag/project-management" rel="tag">project management</a> </p>
+				</div> <!-- .meta -->
+
+				
+				<div class="post-pagination section-inner">
+
+					<div class="previous-post">
+													<a href="/career/what-kind-of-shaped-professional-are-you" rel="prev"><span>What kind of shaped professional are you?</span></a>											</div>
+
+					<div class="next-post">
+													<a href="/time-management/past-year-review-2019" rel="next"><span>Past Year Review (2019)</span></a>											</div>
+
+				</div><!-- .post-pagination -->
+
+			
+		 <!-- .post -->
+
+					<footer class="site-footer section-inner">
+
+				<p class="copyright">© 2026 <a href="/" class="site-name">Fabio Cicerchia</a></p>
+				
+			</footer> <!-- footer -->
+
+		</article></main>
+		
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mcluhan/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" defer src="/wp-content/plugins/wplegalpages/admin/js/jquery.cookie.min.js?ver=3.5.7" id="wp-legal-pages-jquery-cookie-js"></script>
+<script type="text/javascript" src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" id="mcluhan_global-js-extra">
+/* <![CDATA[ */
+var mcluhan_ajaxpagination = {"ajaxurl":"/wp-admin/admin-ajax.php","query_vars":"{\"page\":\"\",\"name\":\"practical-estimates\",\"category_name\":\"project-management\"}"};
+//# sourceURL=mcluhan_global-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/mcluhan/assets/js/global.js?ver=2.1.1" id="mcluhan_global-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://fabiocicerchia.it/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+			
+	</body>
+</html>

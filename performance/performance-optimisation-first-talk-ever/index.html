@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-GB" prefix="og: https://ogp.me/ns#">
+
+	<head><meta http-equiv="content-type" content="text/html" charset="UTF-8">
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+
+		<title>Performance Optimisation, my first talk ever - Fabio Cicerchia</title>
+
+		<!-- All in One SEO 4.9.3 - aioseo.com -->
+	<meta name="description" content="[toc] https://www.slideshare.net/fabiocicerchia/performance-optimisation-69670789 At the end of 2016, I gave a talk at the PUG Roma meetup talking about web performance. Despite my expectations of a first-time shy speaker, the room was packed with more than 50 attendees. Here it is the script of the talk. Performance is a process, not a project Every engineer should think">
+	<meta name="robots" content="max-image-preview:large">
+	<meta name="author" content="fabio">
+	<link rel="canonical" href="/performance/performance-optimisation-first-talk-ever">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.9.3">
+		<meta property="og:locale" content="en_GB">
+		<meta property="og:site_name" content="Fabio Cicerchia - Helping teams scale smarter, greener, faster.">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Performance Optimisation, my first talk ever - Fabio Cicerchia">
+		<meta property="og:description" content="[toc] https://www.slideshare.net/fabiocicerchia/performance-optimisation-69670789 At the end of 2016, I gave a talk at the PUG Roma meetup talking about web performance. Despite my expectations of a first-time shy speaker, the room was packed with more than 50 attendees. Here it is the script of the talk. Performance is a process, not a project Every engineer should think">
+		<meta property="og:url" content="/performance/performance-optimisation-first-talk-ever">
+		<meta property="article:published_time" content="2017-09-09T19:10:31+00:00">
+		<meta property="article:modified_time" content="2017-09-09T19:10:31+00:00">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@fabiocicerchia">
+		<meta name="twitter:title" content="Performance Optimisation, my first talk ever - Fabio Cicerchia">
+		<meta name="twitter:description" content="[toc] https://www.slideshare.net/fabiocicerchia/performance-optimisation-69670789 At the end of 2016, I gave a talk at the PUG Roma meetup talking about web performance. Despite my expectations of a first-time shy speaker, the room was packed with more than 50 attendees. Here it is the script of the talk. Performance is a process, not a project Every engineer should think">
+		<meta name="twitter:creator" content="@fabiocicerchia">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"\/performance\/performance-optimisation-first-talk-ever#blogposting","name":"Performance Optimisation, my first talk ever - Fabio Cicerchia","headline":"Performance Optimisation, my first talk ever","author":{"@id":"\/author\/fabio#author"},"publisher":{"@id":"\/#person"},"image":{"@type":"ImageObject","url":"http:\/\/devpath.pro\/wp-content\/uploads\/2017\/08\/random_number-300x108.png","@id":"\/performance\/performance-optimisation-first-talk-ever\/#articleImage"},"datePublished":"2017-09-09T21:10:31+00:00","dateModified":"2017-09-09T21:10:31+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"\/performance\/performance-optimisation-first-talk-ever#webpage"},"isPartOf":{"@id":"\/performance\/performance-optimisation-first-talk-ever#webpage"},"articleSection":"Performance, best practices, measuring, monitoring, optimisation, performance, talk, web design"},{"@type":"BreadcrumbList","@id":"\/performance\/performance-optimisation-first-talk-ever#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"#listItem","position":1,"name":"Home","item":"","nextItem":{"@type":"ListItem","@id":"\/category\/performance#listItem","name":"Performance"}},{"@type":"ListItem","@id":"\/category\/performance#listItem","position":2,"name":"Performance","item":"\/category\/performance","nextItem":{"@type":"ListItem","@id":"\/performance\/performance-optimisation-first-talk-ever#listItem","name":"Performance Optimisation, my first talk ever"},"previousItem":{"@type":"ListItem","@id":"#listItem","name":"Home"}},{"@type":"ListItem","@id":"\/performance\/performance-optimisation-first-talk-ever#listItem","position":3,"name":"Performance Optimisation, my first talk ever","previousItem":{"@type":"ListItem","@id":"\/category\/performance#listItem","name":"Performance"}}]},{"@type":"Person","@id":"\/#person","name":"fabio"},{"@type":"Person","@id":"\/author\/fabio#author","url":"\/author\/fabio","name":"fabio"},{"@type":"WebPage","@id":"\/performance\/performance-optimisation-first-talk-ever#webpage","url":"\/performance\/performance-optimisation-first-talk-ever","name":"Performance Optimisation, my first talk ever - Fabio Cicerchia","description":"[toc] https:\/\/www.slideshare.net\/fabiocicerchia\/performance-optimisation-69670789 At the end of 2016, I gave a talk at the PUG Roma meetup talking about web performance. Despite my expectations of a first-time shy speaker, the room was packed with more than 50 attendees. Here it is the script of the talk. Performance is a process, not a project Every engineer should think","inLanguage":"en-GB","isPartOf":{"@id":"\/#website"},"breadcrumb":{"@id":"\/performance\/performance-optimisation-first-talk-ever#breadcrumblist"},"author":{"@id":"\/author\/fabio#author"},"creator":{"@id":"\/author\/fabio#author"},"datePublished":"2017-09-09T21:10:31+00:00","dateModified":"2017-09-09T21:10:31+00:00"},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"Fabio Cicerchia","description":"Helping teams scale smarter, greener, faster.","inLanguage":"en-GB","publisher":{"@id":"\/#person"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="dns-prefetch" href="">
+<link rel="alternate" type="application/rss+xml" title="Fabio Cicerchia » Feed" href="/feed">
+<link rel="alternate" type="application/rss+xml" title="Fabio Cicerchia » Comments Feed" href="/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="Fabio Cicerchia » Performance Optimisation, my first talk ever Comments Feed" href="/performance/performance-optimisation-first-talk-ever/feed">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fperformance%2Fperformance-optimisation-first-talk-ever">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fperformance%2Fperformance-optimisation-first-talk-ever&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #121212;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #333;--wp--preset--color--medium-gray: #555;--wp--preset--color--light-gray: #777;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 16px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 18px;--wp--preset--font-size--larger: 28px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel="stylesheet" id="mcluhan-fonts-css" href="/wp-content/themes/mcluhan/assets/css/fonts.css?ver=6.9" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="/wp-content/themes/mcluhan/assets/css/font-awesome.css?ver=6.9" type="text/css" media="all">
+<link rel="stylesheet" id="mcluhan-style-css" href="/wp-content/themes/mcluhan/style.css?ver=2.1.1" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/47"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9">
+<link rel="shortlink" href="/?p=47">
+
+			<!-- Customizer CSS -->
+
+			<style type="text/css">
+
+				
+			</style>
+
+			<!-- /Customizer CSS -->
+
+					<script>jQuery( 'html' ).removeClass( 'no-js' ).addClass( 'js' );</script>
+		<style type="text/css">.blue-message {
+    background-color: #3399ff;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.green-message {
+    background-color: #8cc14c;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.orange-message {
+    background-color: #faa732;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.red-message {
+    background-color: #da4d31;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.grey-message {
+    background-color: #53555c;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}.left-block {
+    background: radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%);
+    color: #8b8e97;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
+}.right-block {
+    background: radial-gradient(ellipse at center center, #ffffff 0%, #f2f2f2 100%);
+    color: #8b8e97;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: right;
+}.blockquotes {
+    background-color: none;
+    border-left: 5px solid #f1f1f1;
+    color: #8B8E97;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+    padding-left: 15px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+    float: left;
+}</style>		<style type="text/css" id="wp-custom-css">
+			.site-title { font-size: 1.5em; font-weight: bold; }
+.site-description { font-style: italic; }
+body.home, .home main { background: #121212; color: white; }
+.home footer { display: none; }
+* { font-family: 'Ubuntu', sans-serif; }
+.section-inner { max-width: none; width: 65%; }
+.wp-block-post .has-background { color: white; }
+.post-1989 .entry-content { padding-top: 100px; }
+:where(.wp-block-cover-image:not(.has-text-color)), :where(.wp-block-cover:not(.has-text-color)) { color: black; }
+.entry-content .wp-block-file { flex-wrap: wrap; }
+.wp-block-post-author { display:none; }
+.wp-block-post-author + .has-xsmall-font-size { display:none; }		</style>
+				<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+
+	</head>
+
+	<body class="wp-singular post-template-default single single-post postid-47 single-format-standard wp-theme-mcluhan hide-social">
+
+		
+		<a class="skip-link button" href="#site-content">Skip to the content</a>
+
+		<header class="site-header group">
+
+			
+			<p class="site-title"><a href="/" class="site-name">Fabio Cicerchia</a></p>
+
+			
+				<div class="site-description"><p>Helping teams scale smarter, greener, faster.</p>
+</div>
+
+			
+			<div class="nav-toggle">
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+
+			<div class="menu-wrapper">
+
+				<ul class="main-menu desktop">
+
+					<li id="menu-item-2177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2177"><a href="/about-me">About me</a></li>
+<li id="menu-item-2176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"><a href="/resume">Resume</a></li>
+<li id="menu-item-2179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2179"><a href="/newsletter">Newsletter</a></li>
+<li id="menu-item-2175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2175"><a href="/projects">Projects</a></li>
+<li id="menu-item-2292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="/books">Books</a></li>
+<li id="menu-item-2178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2178"><a href="/mentoring">Mentoring</a></li>
+<li id="menu-item-2174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2174"><a href="/talks">Talks</a></li>
+<li id="menu-item-2173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2173"><a href="/blog">Blog</a></li>
+				</ul>
+
+			</div><!-- .menu-wrapper -->
+
+			
+		</header><!-- header -->
+
+		<div class="mobile-menu-wrapper">
+
+			<ul class="main-menu mobile">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2177"><a href="/about-me">About me</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"><a href="/resume">Resume</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2179"><a href="/newsletter">Newsletter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2175"><a href="/projects">Projects</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="/books">Books</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2178"><a href="/mentoring">Mentoring</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2174"><a href="/talks">Talks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2173"><a href="/blog">Blog</a></li>
+			</ul><!-- .main-menu.mobile -->
+
+			
+		</div><!-- .mobile-menu-wrapper -->
+
+		
+		<main class="site-content" id="site-content">
+		<article class="post-47 post type-post status-publish format-standard hentry category-performance tag-best-practices tag-measuring tag-monitoring tag-optimisation tag-performance tag-talk tag-web-design missing-thumbnail">
+
+			
+			<header class="entry-header section-inner">
+
+				<h1 class="entry-title">Performance Optimisation, my first talk ever</h1>
+					<div class="meta">
+
+						<time><a href="/performance/performance-optimisation-first-talk-ever">September 9, 2017</a></time>
+
+						
+							<span>
+								In <a href="/category/performance" rel="category tag">Performance</a>							</span>
+
+						
+					</div>
+
+				
+			</header><!-- .entry-header -->
+
+			<div class="entry-content section-inner">
+
+				<p>[toc]<br>
+https://www.slideshare.net/fabiocicerchia/performance-optimisation-69670789</p>
+<p>At the end of 2016, I gave a talk at the <a href="http://roma.grusp.org/" target="_blank" rel="noopener noreferrer">PUG Roma meetup</a> talking about <a href="http://roma.grusp.org/2016/12/incontro-di-novembre-2016/" target="_blank" rel="noopener noreferrer">web performance</a>. Despite my expectations of a first-time shy speaker, the room was packed with more than 50 attendees.</p>
+<p><span id="more-47"></span></p>
+<p>Here it is the script of the talk.</p>
+<ol>
+<li>Performance is a <strong>process</strong>, <span style="text-decoration: underline;">not</span> a <strong>project</strong> <span style="text-decoration: underline;">Every</span> engineer should think about performance</li>
+<li><strong>Time</strong> is <strong>Money</strong> <em>Unfortunately you can’t buy it, so don’t waste it</em></li>
+<li>Performance matters</li>
+</ol>
+<h2>Measuring</h2>
+<h3>How?</h3>
+<ol>
+<li><strong>Accurately</strong> measure page performance</li>
+<li>Be <strong>unobtrusive</strong></li>
+<li>Have a good <strong>sampling</strong></li>
+<li>Focus on <strong>useful</strong> metrics</li>
+</ol>
+<h3>Random Sampling</h3>
+<p><a href="http://xkcd.com/221/" rel="nofollow"><img decoding="async" class="size-medium wp-image-197 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/random_number-300x108.png" alt="Strip from XKCD about how to generate a number in a funny way" width="300" height="108"></a> How to <strong>randomise?</strong></p>
+<ul>
+<li>Pick 10% of users at random and always test them</li>
+<li>For each user, decide at random if they should be tested</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://tech.bluesmoon.info/2010/01/statistics-of-performance-measurement.html" rel="nofollow"><small>The statistics of performance measurement – Random Sampling</small></a></li>
+</ul>
+<h3>Central Tendency</h3>
+<ul>
+<li><strong>Mean</strong>(10, 11, 12, 11, 109) = 30 Affected by outliers</li>
+<li><strong>Median</strong>(10, 11, 12, 11, 109) = 11 Central tendency</li>
+<li><strong>Mode</strong>(10, 11, 12, 11, 109) = 11 Most recurring value, not often used</li>
+</ul>
+<h3>Percentiles</h3>
+<ul>
+<li><strong>Percentiles</strong> are perfect for automatic baselining.</li>
+<li><strong>Averages</strong> can be misleading.</li>
+</ul>
+<p>Keep an eye on:</p>
+<ul>
+<li>50th percentile = Median</li>
+<li>95th percentile</li>
+<li>98th percentile</li>
+<li>99th percentile</li>
+</ul>
+<ul>
+<li>You can’t improve what you can’t measure</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://apmblog.dynatrace.com/2012/11/14/why-averages-suck-and-percentiles-are-great/" rel="nofollow"><small>Why Averages Suck and Percentiles are Great</small></a></li>
+</ul>
+<h2>Metrics</h2>
+<h3>TTFB</h3>
+<p>The Time To First Byte metric is affected by 3 components:</p>
+<ul>
+<li>The time the request takes to reach the web server</li>
+<li>The time the web server takes to process the request and generate the response</li>
+<li>The time the response takes to go back to your browser</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://moz.com/blog/improving-search-rank-by-optimizing-your-time-to-first-byte" rel="nofollow"><small>Improving Search Rank by Optimizing Your Time to First Byte</small></a></li>
+</ul>
+<h3>TTLB</h3>
+<p>As per TTFB the reasons for a high <strong>Time To Last Byte</strong> could be:</p>
+<ul>
+<li>Geographic latency (server is far away from visitor)</li>
+<li>Poorly written server-side code</li>
+<li>Outdated server hardware</li>
+<li>Overloaded servers (clogged bandwidth due to high traffic – from humans, bots, or both)</li>
+<li>Poorly organized databases</li>
+<li>Poorly written database code</li>
+</ul>
+<h3>DOM Content Loaded</h3>
+<ul>
+<li>It’s fired when the HTML document has been <strong>completely loaded and parsed</strong>, without waiting for stylesheets, images, and subframes to finish loading. A very <em>different event</em> load should be used only to detect a <em>fully-loaded page</em>. It is an incredibly popular mistake to use load where DOMContentLoaded would be much more appropriate, so be cautious.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded" rel="nofollow"><small>DOMContentLoaded</small></a></li>
+</ul>
+<h3>Full Load</h3>
+<p><code>// 1<br>
+document.addEventListener('DOMContentLoaded', function (event) {<br>
+console.log('DOM fully loaded and parsed');<br>
+});</code></p>
+<p><code>// 2<br>
+function load() {<br>
+console.log('load event detected!');<br>
+}<br>
+window.onload = load;</code></p>
+<p><code>// 3<br>
+$(document).ready(function () {<br>
+console.log('ready');<br>
+});</code></p>
+<p><code>// 4<br>
+$(window).load(function () {<br>
+console.log('loaded');<br>
+});</code></p>
+<p>OUTPUT<br>
+1. ready<br>
+2. DOM fully loaded and parsed<br>
+3. load event detected!<br>
+4. loaded</p>
+<h3>Speed Index</h3>
+<p><img decoding="async" class="size-medium wp-image-199 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/compare_progress-300x161.png" alt="Example of Speed Index loading progress" width="300" height="161"></p>
+<ul>
+<li>The Speed Index is the average time at which visible parts of the page are displayed. It is expressed in milliseconds and dependent on the size of the view port. The Speed Index metric measures how quickly the page contents are visually populated (where lower numbers are better).</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://github.com/WPO-Foundation/webpagetest-docs/blob/main/src/metrics/SpeedIndex.md" rel="nofollow"><small>Speed Index</small></a></li>
+</ul>
+<h2>Some Figures</h2>
+<h3>3rd Party?</h3>
+<ul>
+<li>3rd party calls can make up <strong>&gt;50% of page requests</strong>.</li>
+<li>They are the single greatest potential point of failure for web pages.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://web.archive.org/web/20160406014508/http://www.webperformancetoday.com/2011/07/14/fourth-party-calls-third-party-content/" rel="nofollow"><small>Fourth-party calls: What you don’t know can hurt your site… and your visitors</small></a></li>
+</ul>
+<h3>GZip?</h3>
+<ul>
+<li>GZIP compression <strong>saves 50% to 80%</strong> bandwidth and it will significantly increase the website’s loading speed.</li>
+<li>Netflix saw a 43% drop in outbound traffic after enabling compression</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://web.archive.org/web/20160406014508/http://www.webperformancetoday.com/2011/07/14/fourth-party-calls-third-party-content/" rel="nofollow"><small>18 Tips for Website Performance Optimization</small></a></li>
+<li><a href="https://web.archive.org/web/20160406014508/http://www.webperformancetoday.com/2011/07/14/fourth-party-calls-third-party-content/" rel="nofollow"><small>15 Web Performance Stats You Should Know</small></a></li>
+</ul>
+<h3>Images?</h3>
+<ul>
+<li>On average, <a href="http://httparchive.org/interesting.php#bytesperpage?ictd%5Bmaster%5D=vid~720f2d5d-60be-46fc-92c4-1774ba093d21&amp;ictd%5Bil583%5D=rlt~1441669636~land~2_3853_seo_aa73a52e6449ecff40e9a5c66e7bb93f" rel="nofollow">64% of a website’s page weight</a> is made up of images. – HTTP Archive</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://httparchive.org/interesting.php" rel="nofollow"><small>Interesting stats</small></a></li>
+</ul>
+<h3>Redirect?</h3>
+<ul>
+<li><strong>20%</strong> pages contain 5 or more redirects.</li>
+<li>And 3% of pages contained 10 or more.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.soasta.com/blog/23-stats-mobile-web-performance-monitoring/" rel="nofollow"><small>Mobile Web Performance: 23 stats you should know about mobile web performance</small></a></li>
+</ul>
+<h3>100ms slower?</h3>
+<ul>
+<li><strong>1%</strong> drop in sales (Amazon)</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://www.carbon60.com/blog/milliseconds-are-money-how-much-performance-matters-in-the-cloud" rel="nofollow"><small>Milliseconds are Money: How Much Performance Matters in the Cloud</small></a></li>
+</ul>
+<h3>500ms slower?</h3>
+<ul>
+<li><strong>25%</strong> drop in searches (Google)</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://cdnify.com/blog/15-web-performance-stats/" rel="nofollow"><small>15 Web Performance Stats You Should Know</small></a></li>
+</ul>
+<h3>1 second slower?</h3>
+<ul>
+<li><strong>11%</strong> fewer page views, a <strong>16%</strong> decrease in customer satisfaction, and <strong>7%</strong> loss in conversions</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://www.aberdeen.com/Aberdeen-Library/5136/RA-performance-web-application.aspx" rel="nofollow"><small>THE PERFORMANCE OF WEB APPLICATIONS: CUSTOMERS ARE WON OR LOST IN ONE SECOND</small></a></li>
+</ul>
+<h3>2 seconds slower?</h3>
+<ul>
+<li>During a transaction results in abandonment rates of up to <strong>87%</strong>. This is significantly higher than the average abandonment rate of <strong>70%</strong>.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://www.aberdeen.com/Aberdeen-Library/5136/RA-performance-web-application.aspx" rel="nofollow"><small>55 Web Performance Stats You’ll Want to Know</small></a></li>
+</ul>
+<h3>3 seconds slower?</h3>
+<ul>
+<li><a href="https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/" rel="nofollow">53% of visits to mobile sites are abandoned after 3 seconds</a> – Google’s DoubleClick.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://wpostats.com/" rel="nofollow"><small>WPO Stats</small></a></li>
+</ul>
+<h3>4 seconds?</h3>
+<ul>
+<li>Only <strong>2%</strong> of the top 100 e-commerce sites loads in fewer than 4 seconds on smartphones.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://blog.radware.com/applicationdelivery/applicationaccelerationoptimization/2014/01/55-web-performance-stats-youll-want-to-know/" rel="nofollow"><small>55 Web Performance Stats You’ll Want to Know</small></a></li>
+</ul>
+<h3>10 seconds?</h3>
+<ul>
+<li><strong>1 out of 4</strong> pages took more than 10 seconds to load.</li>
+<li><strong>20%</strong> of the top 100 e-commerce sites loads in more than 10 seconds.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://blog.radware.com/applicationdelivery/applicationaccelerationoptimization/2014/01/55-web-performance-stats-youll-want-to-know/" rel="nofollow"><small>55 Web Performance Stats You’ll Want to Know</small></a></li>
+</ul>
+<h3>To infinity… and beyond!</h3>
+<ul>
+<li>According to Google’s DoubleClick, when comparing sites that load in 5 seconds to sites that load in 19 seconds, the faster sites had <strong>70% longer average session lengths, 35% lower bounce rates</strong> and <strong>25% higher ad viewability</strong> than their slower counterparts.</li>
+<li>Google’s DoubleClick found that publishers whose mobile sites load in 5 seconds earn up to <strong>2x more mobile ad revenue</strong> than sites loading in 19 seconds.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://wpostats.com/" rel="nofollow"><small>WPO Stats</small></a></li>
+</ul>
+<h3>Poor Performances = Web Stress</h3>
+<ul>
+<li>Brain wave analysis from the experiment revealed that participants had to concentrate <strong>up to 50% more</strong> when using <em>badly performing websites</em>, while facial muscle and behavioural analysis of the subjects also revealed <strong>greater agitation and stress</strong> in these periods.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.tecnostress.it/wp-content/uploads/2010/02/final_webstress_survey_report_229296.pdf" rel="nofollow"><small>Webstress Survey Report</small></a></li>
+</ul>
+<h2>Long story short…</h2>
+<ul>
+<li>You are LOSING <strong>Visitors</strong></li>
+<li>You are LOSING <strong>Sales</strong></li>
+<li>You are LOSING <strong>Ad-revenue</strong></li>
+<li>You are WASTING <strong>SEO/SEM/PPC budget</strong></li>
+<li>SPENDING $$$ on <strong>bandwidth and servers</strong></li>
+</ul>
+<h2>So, how to do it?</h2>
+<ul>
+<li>too many irons in the fire</li>
+<li><strong>WPO</strong> (<a href="https://devcentral.f5.com/articles/wils-wpo-versus-feo" rel="nofollow">Web Performance Optimisation</a>) Optimise the poorly performing networks and servers</li>
+<li><strong>FEO</strong> (<a href="https://devcentral.f5.com/articles/wils-wpo-versus-feo" rel="nofollow">Front-End Optimisation</a>) Change the content to decrease the amount of traffic</li>
+<li><strong>WCO</strong> (<a href="https://web.archive.org/web/20150518080740/http://www.webperformancetoday.com/2011/06/10/wpo-wco-feo-web-performance-optimization/" rel="nofollow">Web Content Optimisation</a>) Make the page rendering faster</li>
+<li><strong>DSA</strong> (<a href="https://en.wikipedia.org/wiki/Dynamic_site_acceleration" rel="nofollow">Dynamic Site Acceleration</a>) Bring network resources closer to the user by prefetching or caching files</li>
+</ul>
+<h2>Let’s do it!</h2>
+<h3>Level 0 – Noob</h3>
+<h4>GZip</h4>
+<ul>
+<li>You send zipped content over the wire, the browser unpacks it</li>
+<li>Modern browsers understand compressed content</li>
+<li>Search engine spiders do too</li>
+</ul>
+<h4>Minify</h4>
+<ul>
+<li>Minify JavaScript and CSS</li>
+<li>Inline styles and scripts should also be minified</li>
+<li>The <a href="https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/" rel="nofollow">Source Maps</a> are loaded only in Dev Mode</li>
+</ul>
+<h4>Avoid 404s</h4>
+<ul>
+<li>Useless requests</li>
+<li>When an external JavaScript is a 404, the browser will still try to parse it and find something usable in it</li>
+<li>They’ll slow down the UX</li>
+</ul>
+<h4>Optimise Images</h4>
+<ul>
+<li>Lossless optimisation</li>
+<li>Correct dimensions</li>
+<li>Save for web</li>
+<li>Use the right file format: GIF for animations, JPEG for photograph, otherwise PNG</li>
+<li>Don’t Scale Images in HTML</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://www.creativebloq.com/netmag/10-ways-optimise-images-better-performance-71515792" rel="nofollow"><small>10 ways to optimise images for better performance</small></a></li>
+</ul>
+<h4>Optimise CSS Sprites</h4>
+<ul>
+<li>Choose horizontal over vertical when possible</li>
+<li>Combine similar colors</li>
+<li>Keep color count low</li>
+<li>Don’t leave big gaps</li>
+</ul>
+<h4>Back to basics</h4>
+<ul>
+<li><a href="http://code.google.com/speed/page-speed/docs/rules_intro.html" rel="nofollow">Google’s Rules</a>
+<ul>
+<li>Avoid bad requests</li>
+<li>Avoid CSS expressions</li>
+<li>Combine external CSS</li>
+<li>Combine external JavaScript</li>
+<li>Defer loading of JavaScript</li>
+<li>Enable compression</li>
+<li>Leverage browser caching</li>
+<li>Leverage proxy caching</li>
+<li>Minify CSS</li>
+<li>Minify HTML</li>
+<li>Minify JavaScript</li>
+</ul>
+</li>
+<li><a href="https://developer.yahoo.com/performance/rules.html" rel="nofollow">Yahoo’s Rules</a>
+<ul>
+<li>Minimize HTTP Requests</li>
+<li>Use a Content Delivery Network</li>
+<li>Add an Expires or a Cache-Control Header</li>
+<li>Gzip Components</li>
+<li>Put StyleSheets at the Top</li>
+<li>Put Scripts at the Bottom</li>
+<li>Avoid CSS Expressions</li>
+<li>Make JavaScript and CSS External</li>
+<li>Reduce DNS Lookups</li>
+<li>Minify JavaScript and CSS</li>
+<li>Avoid Redirects</li>
+</ul>
+</li>
+</ul>
+<h3>Level 1 – Getting Serious</h3>
+<h4>Favicon.ico</h4>
+<ul>
+<li>The browser will request it</li>
+<li>Better not respond with a 404</li>
+<li>Cookies are sent</li>
+<li>Cannot be on CDN</li>
+<li>Interferes with the download sequence</li>
+<li>Make it small (&lt;= 1K)</li>
+<li>Animated favicons are not cool</li>
+<li>Set Expires header</li>
+</ul>
+<h4>Minimise iframes</h4>
+<ul>
+<li>Pros:
+<ul>
+<li>Can help with slow third-party content like badges and ads</li>
+<li>Security sandbox</li>
+<li>You can download scripts in parallel</li>
+</ul>
+</li>
+<li>Cons:
+<ul>
+<li>They have a cost even if blank</li>
+<li>They block page onload</li>
+<li>Non-semantic</li>
+</ul>
+</li>
+</ul>
+<h4>Post-load Components</h4>
+<ul>
+<li>What’s absolutely required in order to render the page initially?</li>
+<li>The rest can wait (drag and drop, animations, hidden content, images below the fold)</li>
+</ul>
+<h4>Preload Components</h4>
+<ul>
+<li>Items you’ll need in the future</li>
+<li>Unconditional preload (google.com loads a sprite onload)</li>
+<li>Conditional preload (search.yahoo.com after you type in the input box)</li>
+<li>Anticipated preload – preload in advance before launching a redesign</li>
+<li>When you start typing the page can safely assume you’ll hit the search results page</li>
+</ul>
+<h4>Use Cookie-Free Domains</h4>
+<ul>
+<li><strong>Option 1:</strong> Separate subdomain (static.example.org)</li>
+<li><strong>Option 2:</strong> A new domain (e.g. yimg.com, ytimg.com, images-amazon.com)</li>
+</ul>
+<h4>ETags</h4>
+<ul>
+<li>ETag is a token that can be associated with a web resource</li>
+<li>ETags are meant to help with caching
+<ul>
+<li>They take precedence for caching</li>
+<li>They never expire</li>
+</ul>
+</li>
+<li>Issues with load balanced environment
+<ul>
+<li>A component served from server A has a different ETag than the same component served from B</li>
+</ul>
+</li>
+<li>Most of the time you don’t need them</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://techpunch.co.uk/development/should-your-site-be-using-etags-or-not" rel="nofollow"><small>Should your site be using etags or not?</small></a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching" rel="nofollow"><small>HTTP Caching</small></a></li>
+</ul>
+<h4>Reduce Cookies</h4>
+<ul>
+<li>Eliminate unnecessary cookies</li>
+<li>Keep cookie sizes as low as possible to minimize the impact on the user response time</li>
+<li>Be mindful of setting cookies at the appropriate domain level so other sub-domains are not affected</li>
+<li>Set an Expires date appropriately. An earlier Expires date or none removes the cookie sooner, improving the user response time</li>
+</ul>
+<h4>Event Handlers</h4>
+<ul>
+<li>Don’t wait for onload, use DOMContentLoaded</li>
+<li>Events bubble up, so use delegation (attach listeners to outer elements)</li>
+<li>Clean up to prevent IE memory leaks</li>
+<li>Careful with onresize</li>
+</ul>
+<h4>Choose &lt;link&gt; over @import</h4>
+<ul>
+<li>CSS should be at the top</li>
+<li>@import blocks parallel downloads</li>
+<li>In IE @import is the same as &lt;link&gt; putting at the bottom</li>
+<li>&lt;link&gt; allows alternate styles (e.g. for accessibility)</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/" rel="nofollow"><small>don’t use @import</small></a></li>
+<li><a href="http://alistapart.com/article/alternate" rel="nofollow"><small>Alternative Style: Working With Alternate Style Sheets</small></a></li>
+</ul>
+<h3>Level 2 – Advanced</h3>
+<h4>Reduce DOM Elements</h4>
+<ul>
+<li>World’s fastest page? about:blank!</li>
+<li>A complex page means more bytes to download, it also means slower DOM access in JavaScript</li>
+<li>Easy to test, just type in Firebug’s console: document.getElementsByTagName(‘*’).length</li>
+</ul>
+<h4>Prefetching</h4>
+<ul>
+<li>DNS prefetching → resolve the DNS</li>
+<li>Preconnect → resolve the DNS + TCP handshake + TLS negotiation (optional)</li>
+<li>Prefetch → requesting, downloading and storing the asset in the cache</li>
+<li>Prerender → load all of the assets of a certain document</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://css-tricks.com/prefetching-preloading-prebrowsing/" rel="nofollow"><small>Prefetching, preloading, prebrowsing</small></a></li>
+</ul>
+<h4>ATF</h4>
+<ul>
+<li>The most important and interesting section should be at the top of the webpage</li>
+<li>Make sure to render the Above The Fold content in &lt; 1s</li>
+<li>Defer the non-AFT contents</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://whereisthefold.com/" rel="nofollow"><small>Where is the fold?</small></a></li>
+</ul>
+<h4>Requests Sharding</h4>
+<ul>
+<li>Domain sharding is a technique for splitting resources across multiple domains, improving page load time. When multiple domains are used, browsers are able to download more resources simultaneously, resulting in a faster user experience. <em><strong>Note:</strong> HTTP/2 has officially replaced SPDY and made it obsolete.</em></li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://blog.stackpath.com/glossary/domain-sharding/" rel="nofollow"><small>What is Domain Sharding?</small></a></li>
+<li><a href="https://www.stevesouders.com/blog/2013/09/05/domain-sharding-revisited/" rel="nofollow"><small>Domain Sharding revisited</small></a></li>
+</ul>
+<h4>VanillaJS</h4>
+<p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-200" src="http://devpath.pro/wp-content/uploads/2017/08/iFaEh-300x251.png" alt="Speed comparison of some methods using different frameworks" width="300" height="251"> <small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://vanilla-js.com/" rel="nofollow"><small>VanillaJS</small></a></li>
+</ul>
+<h4>Avoid Filters</h4>
+<ul>
+<li>Blocks rendering, freezes the browser Increased memory consumption Per element, not per image</li>
+</ul>
+<h4>Web Fonts</h4>
+<ul>
+<li>Blocks text rendering</li>
+<li>Fonts are bigger than 14Kb</li>
+<li>Use them with care</li>
+<li>Remove characters</li>
+</ul>
+<h4>WebP</h4>
+<ul>
+<li>WebP is a modern image format that provides superior lossless and lossy compression for images on the web.</li>
+<li>WebP lossless images are <a href="https://developers.google.com/speed/webp/docs/webp_lossless_alpha_study#results" rel="nofollow">26% smaller</a> than PNGs and <a href="https://developers.google.com/speed/webp/docs/webp_study" rel="nofollow">25-34% smaller</a> than JPEG images.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://developers.google.com/speed/webp/docs/webp_lossless_alpha_study" rel="nofollow"><small>Lossless and Transparency Encoding in WebP</small></a></li>
+<li><a href="https://developers.google.com/speed/webp/" rel="nofollow"><small>A new image format for the Web</small></a></li>
+</ul>
+<h4>Animations</h4>
+<ul>
+<li>Don’t animate from JavaScript for basic stuff</li>
+<li>Use requestAnimationFrame</li>
+<li>Have a look at GSAP (20x faster than jQuery) and VelocityJS</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/Apps/Fundamentals/Performance/CSS_JavaScript_animation_performance" rel="nofollow"><small>CSS and JavaScript animation performance</small></a></li>
+<li><a href="https://greensock.com/js/speed.html" rel="nofollow"><small>JavaScript Animation Speed Test</small></a></li>
+<li><a href="http://velocityjs.org/" rel="nofollow"><small>Velocity.js</small></a></li>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ui/animations/animations-and-performance" rel="nofollow"><small>Animations and Performance</small></a></li>
+</ul>
+<h4>HTML5 Features</h4>
+<ul>
+<li><span style="text-decoration: line-through;">Application Cache</span> Service Workers</li>
+<li>Web Storage</li>
+<li>Web Workers</li>
+<li>Navigation Timing API</li>
+<li>Web Sockets</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://mobilehtml5.org/" rel="nofollow"><small>Mobile HTML5</small></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache" rel="nofollow"><small>Using the application cache</small></a></li>
+</ul>
+<h4>CRP</h4>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-201 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/progressive-rendering-300x147.png" alt="Example of rendering of a web page" width="300" height="147"></p>
+<ul>
+<li>Optimizing the <em>Critical Rendering Path</em> refers to <strong>prioritising</strong> the display of content that relates to the current user action.</li>
+<li><strong>Perceived Performance</strong> is a measure of how quick a user thinks your site is</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/" rel="nofollow"><small>Critical Rendering Path</small></a></li>
+<li><a href="https://www.smashingmagazine.com/2015/08/understanding-critical-css/" rel="nofollow"><small>Understanding Critical CSS</small></a></li>
+<li><a href="http://blog.teamtreehouse.com/perceived-performance" rel="nofollow"><small>An Introduction to Perceived Performance</small></a></li>
+</ul>
+<h3>Level 3 – Behind the Scenes</h3>
+<h4>Latency</h4>
+<ul>
+<li>Latency is the amount of time it takes to transmit a single piece of data from one location to another</li>
+</ul>
+<ol>
+<li>Decrease External HTTP Requests</li>
+<li>DNS Prefetching</li>
+<li>Preconnect</li>
+<li>Use a CDN</li>
+<li>HTTP/2</li>
+<li>Caching</li>
+</ol>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.keycdn.com/blog/latency-optimization/" rel="nofollow"><small>Latency Optimization – Tips for Optimal Performance</small></a></li>
+</ul>
+<h4>CDN</h4>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-202 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/cdn-region-specific-300x134.png" alt="CDN explaination" width="300" height="134"> Get a Content Delivery Network:</p>
+<ul>
+<li>Akamai</li>
+<li>CDNify (from $10/m)</li>
+<li>CloudFlare (free-mium)</li>
+<li>MaxCDN (from $9/m)</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.cdnplanet.com/cdns/" rel="nofollow"><small>Content Delivery Networks</small></a></li>
+<li><a href="https://www.cdnperf.com/tools/cdn-calculator" rel="nofollow"><small>CDN Calculator</small></a></li>
+</ul>
+<h4>Cache</h4>
+<ul>
+<li>What is dynamic content? Almost everything is static for a time. The hard part is to reduce the miss rate.</li>
+<li>What can you cache?
+<ul>
+<li>DB Results</li>
+<li>Functions Output</li>
+<li>Generated HTML</li>
+</ul>
+</li>
+<li><em>There are only two hard things in Computer Science: cache invalidation and naming things — Phil Karlton</em></li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/web-caching-basics-terminology-http-headers-and-caching-strategies" rel="nofollow"><small>Web Caching Basics: Terminology, HTTP Headers, and Caching Strategies</small></a></li>
+<li><a href="https://www.mnot.net/cache_docs/" rel="nofollow"><small>Caching Tutorial for Web Authors and Webmasters</small></a></li>
+</ul>
+<h4>SPDY</h4>
+<ul>
+<li>SPDY is now <strong>deprecated</strong></li>
+<li>Allows concurrent HTTP requests in one TCP session.</li>
+<li>Reduces the bandwidth used by HTTP (header compression &amp; cleaning useless headers).</li>
+<li>Makes SSL the underlying transport protocol, for better security and compatibility with existing network infrastructure.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.chromium.org/spdy/spdy-whitepaper" rel="nofollow"><small>SPDY: An experimental protocol for a faster web</small></a></li>
+</ul>
+<h4>HTTP/2</h4>
+<ul>
+<li>Origins from SPDY by Google</li>
+<li>HTTP/2 is protocol designed for
+<ul>
+<li>Low latency transport of content over the Web</li>
+</ul>
+</li>
+<li>No change to HTTP semantics
+<ul>
+<li>It’s about how data travels through the wire</li>
+</ul>
+</li>
+<li>Key new features in HTTP/2
+<ul>
+<li>Multiplexing: multiple streams over a single connection</li>
+<li>Header compression: reuse headers from previous requests</li>
+<li>Server push: multiple parallel responses for a single request</li>
+<li>Prioritisation: some resources have priorities</li>
+</ul>
+</li>
+<li><strong>HTTP/1 workarounds hurt HTTP/2 perf.</strong></li>
+<li>Antipatterns
+<ul>
+<li>Domain Sharding</li>
+<li>Images Sprites</li>
+<li>Resource In-Lining</li>
+<li>Merging CSS &amp; JS</li>
+</ul>
+</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://daniel.haxx.se/http2/" rel="nofollow"><small>http2 explained</small></a></li>
+<li><a href="http://www.slideshare.net/nakov/http2-for-developers" rel="nofollow"><small>HTTP/2 for Developers</small></a></li>
+<li><a href="http://caniuse.com/#feat=http2" rel="nofollow"><small>HTTP/2 protocol</small></a></li>
+<li><a href="http://www.itbusinessedge.com/slideshows/best-practices-of-http1.1-becoming-bad-practices-for-http2.html" rel="nofollow"><small>Best Practices for HTTP1.1 Becoming Bad Practices for HTTP/2</small></a></li>
+</ul>
+<h4>SSL</h4>
+<ul>
+<li>HTTPS requires an initial handshake despite it’s size (~5KB) it can be very slow.</li>
+<li>Making lots of short requests over HTTPS will be quite a bit slower than HTTP, but if you transfer a lot of data in a single request, the difference will be insignificant.</li>
+<li><em>Solution:</em> Improve the Handshake + Keep-Alive.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://www.maxcdn.com/blog/ssl-performance-myth/" rel="nofollow"><small>The SSL Performance Myth, and Tips for Making Secure Connections Fast</small></a></li>
+<li><a href="https://unhandledexpression.com/development/general/security/2013/01/25/5-easy-tips-to-accelerate-ssl.html" rel="nofollow"><small>5 easy tips to accelerate SSL</small></a></li>
+<li><a href="http://blog.haproxy.com/2011/09/16/benchmarking_ssl_performance/" rel="nofollow"><small>Benchmarking SSL performance</small></a></li>
+</ul>
+<h3>Level 4 – Backend Superstar</h3>
+<h4>XHProf</h4>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-203" src="http://devpath.pro/wp-content/uploads/2017/08/xhprof1-300x150.png" alt="Example of XHProf profiling" width="300" height="150"> <img loading="lazy" decoding="async" class="alignnone size-medium wp-image-204" src="http://devpath.pro/wp-content/uploads/2017/08/image_thumb-300x187.png" alt="Example of Flame Graph" width="300" height="187"></p>
+<h4>SF Profiler</h4>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-205" src="http://devpath.pro/wp-content/uploads/2017/08/profiler-1-300x205.png" alt="Example of Symfony Profiler graph" width="300" height="205"></p>
+<h3>Level 5 – Mobile Ninja</h3>
+<ul>
+<li>Summary</li>
+<li>Slow Network → Reduce Reqs + Reduce Bytes</li>
+<li>Weak CPU = Slow JS → Async + Defer</li>
+<li>Focus on ATF</li>
+<li>Different Connection Model → Reduce domain sharding, Reduce 304s</li>
+<li>Cache → localStorage</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://browserbench.org/JetStream/" rel="nofollow"><small> JetStream </small></a></li>
+<li><a href="http://queue.acm.org/detail.cfm?id=2510122" rel="nofollow"><small>Rules for Mobile Performance Optimization</small></a></li>
+</ul>
+<h3>Level 6 – Guru</h3>
+<h4>PRPL</h4>
+<ul>
+<li>PRPL is a pattern for structuring and serving Progressive Web Apps, with an emphasis on the performance of app delivery and launch. It stands for:</li>
+<li><strong>Push</strong>, critical resources for the initial URL route.</li>
+<li><strong>Render,</strong> initial route.</li>
+<li><strong>Pre-cache</strong>, remaining routes.</li>
+<li><strong>Lazy-load</strong>, and create remaining routes on demand.</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" rel="nofollow"><small>The PRPL Pattern</small></a></li>
+</ul>
+<h4>AMP</h4>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-206 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/image21-300x104.png" alt="Snippet of AMP code" width="300" height="104"></p>
+<ul>
+<li><em>AMP is a way to build web pages for static content that render fast — Google</em></li>
+<li>Accelerated Mobile Pages in Google Index:
+<ul>
+<li>600 million AMP Pages</li>
+<li>700,000 Domains</li>
+<li>100+ Languages</li>
+</ul>
+</li>
+<li><em>We found that AMP pages load <strong>four times faster</strong>, and use <strong>eight times</strong></em> less <em><strong>data</strong> than traditional mobile optimized pages — Jon Parise (Product Engineer, Pinterest)</em></li>
+<li>Gotchas:
+<ul>
+<li>No 3rd party Javascript</li>
+<li>External resources must define static dimensions</li>
+<li>All CSS must be inline (50k max)</li>
+<li>Only GPU-Accelerated animations</li>
+<li>Prioritize Resource Loading</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://engineering.pinterest.com/blog/building-faster-mobile-web-experience-amp" rel="nofollow"><small>Building a faster mobile web experience with AMP</small></a></li>
+<li><a href="https://www.ampproject.org/docs/get_started/create" rel="nofollow"><small>Create your first AMP page</small></a></li>
+<li><a href="https://web.archive.org/web/20190212143653/https://www.lireo.com/wordcamp-columbus-2016-using-google-accelerated-mobile-pages-with-wordpress/" rel="nofollow"><small>WordCamp Columbus 2016: Using Google Accelerated Mobile Pages with WordPress</small></a></li>
+</ul>
+</li>
+</ul>
+<h4>ESI</h4>
+<ul>
+<li><strong>Edge Side Includes</strong> is a language specification for assembling fragments of web pages inside other web pages.</li>
+<li>Example:<code>&lt;esi:include src="http://example.com/1.html" alt="http://bak.example.com/2.html" onerror="continue"/&gt;</code></li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="http://www.w3.org/TR/esi-lang" rel="nofollow"><small>ESI Language Specification 1.0</small></a></li>
+<li><a href="https://www.smashingmagazine.com/2015/02/using-edge-side-includes-in-varnish" rel="nofollow"><small>Controlling The Cache: Using Edge Side Includes In Varnish</small></a></li>
+</ul>
+<h4>Reverse Proxy</h4>
+<p><img loading="lazy" decoding="async" class="size-medium wp-image-207 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/0qpxZ-300x108.png" alt="Network graph of a Proxy and of a Reverse Proxy" width="300" height="108"></p>
+<ul>
+<li>A Reverse Proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers. These resources are then returned to the client as if they originated from the proxy server itself.</li>
+<li>Common choices:
+<ul>
+<li>Varnish</li>
+<li>Squid</li>
+<li>HAProxy</li>
+<li>Nginx</li>
+</ul>
+</li>
+</ul>
+<p><small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Reverse_proxy" rel="nofollow"><small>Reverse proxy</small></a></li>
+<li><a href="http://stackoverflow.com/questions/224664/difference-between-proxy-server-and-reverse-proxy-server" rel="nofollow"><small>Difference between proxy server and reverse proxy server</small></a></li>
+</ul>
+<h4>Databases</h4>
+<ul>
+<li><a href="https://oracle-base.com/articles/10g/performance-tuning-enhancements-10g" rel="nofollow">Oracle</a></li>
+<li><a href="https://wiki.postgresql.org/wiki/Performance_Optimization" rel="nofollow">PostgreSQL</a></li>
+<li><a href="https://wiki.postgresql.org/wiki/Performance_Optimization" rel="nofollow">SQL Server</a></li>
+<li><a href="https://web.archive.org/web/20200805045846/http://www.mikitamanko.com/blog/2013/12/06/mongodb-performance-bottlenecks-optimization-strategies-for-mongodb/" rel="nofollow">MongoDB</a></li>
+<li><a href="https://web.archive.org/web/20200805045846/http://www.mikitamanko.com/blog/2013/12/06/mongodb-performance-bottlenecks-optimization-strategies-for-mongodb/" rel="nofollow">Redis</a></li>
+<li><a href="https://tobert.github.io/pages/als-cassandra-21-tuning-guide.html" rel="nofollow">Memcached</a></li>
+<li><a href="https://tobert.github.io/pages/als-cassandra-21-tuning-guide.html" rel="nofollow">Cassandra</a></li>
+<li><a href="http://orientdb.org/docs/3.0.x/tuning/Performance-Tuning.html" rel="nofollow">OrientDB</a></li>
+</ul>
+<ul>
+<li>http://lmgtfy.com/?q=database+optimisation</li>
+</ul>
+<h2>Tools</h2>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-209" src="http://devpath.pro/wp-content/uploads/2017/08/ChromeDeveloperTools-300x188.png" alt="Chrome Developer Toolbar" width="300" height="188"> <img loading="lazy" decoding="async" class="alignnone size-medium wp-image-208" src="http://devpath.pro/wp-content/uploads/2017/08/SafariDeveloperTools-300x188.png" alt="Safari Developer Toobar" width="300" height="188"> <img loading="lazy" decoding="async" class="alignnone size-medium wp-image-210" src="http://devpath.pro/wp-content/uploads/2017/08/FirefoxDeveloperEdition_Developer_Tools-300x188.png" alt="Firefox Developer Toobar" width="300" height="188"></p>
+<h3>Understand the Waterfall</h3>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-211" src="http://devpath.pro/wp-content/uploads/2017/08/55d6b75bd80f29.44214197-300x119.png" alt="Example of Resource Loading in Waterfall Graph" width="300" height="119"> <small><strong>References:</strong></small></p>
+<ul>
+<li><a href="https://blog.radware.com/applicationdelivery/wpo/2014/03/waterfalls-101-how-to-use-a-waterfall-chart-to-diagnose-performance-pains/" rel="nofollow"><small>Waterfalls 101: How to use a waterfall chart to diagnose your website’s performance pains</small></a></li>
+</ul>
+<h3>Extra</h3>
+<ul>
+<li><a href="http://www.showslow.com/" rel="nofollow">Show Slow</a></li>
+<li><a href="http://www.webpagetest.org/" rel="nofollow">Webpagetest</a></li>
+<li><a href="http://yslow.org/" rel="nofollow">Yslow</a></li>
+<li><a href="https://developers.google.com/speed/pagespeed/" rel="nofollow">PageSpeed</a></li>
+<li><a href="http://gtmetrix.com/" rel="nofollow">GTMetrix</a></li>
+<li><a href="http://redbot.org/" rel="nofollow">RedBot</a></li>
+<li><a href="https://tools.pingdom.com/" rel="nofollow">Pingdom</a></li>
+<li><a href="https://chrome.google.com/webstore/search/spof-o-matic" rel="nofollow">SPOF-O-Matic</a></li>
+<li><a href="https://blackfire.io/" rel="nofollow">Blackfire</a></li>
+<li><a href="http://www.yottaa.com/" rel="nofollow">Yottaa</a></li>
+<li><a href="https://www.blitz.io/" rel="nofollow">Blitz</a></li>
+<li><a href="https://loadimpact.com/" rel="nofollow">Load Impact</a></li>
+<li><a href="https://web.archive.org/web/20180831060657/https://wondernetwork.com/loadtesting" rel="nofollow">WonderNetwork</a></li>
+<li><a href="https://loader.io/" rel="nofollow">Loader</a></li>
+<li><a href="https://www.blazemeter.com/" rel="nofollow">BlazeMeter</a></li>
+<li><a href="http://www.webtuna.com/" rel="nofollow">WebTuna</a></li>
+</ul>
+<h2>Books</h2>
+<p><a href="https://amzn.to/3WAClaC" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-212" src="http://devpath.pro/wp-content/uploads/2017/08/51EMd4P-ukL._SY346_-199x300.jpg" alt="You Don't Know JS Performance" width="199" height="300"></a> <a href="https://amzn.to/3WxlmpJ" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-217" src="http://devpath.pro/wp-content/uploads/2017/08/51hbGi7P1rL._SX379_BO1204203200_-229x300.jpg" alt="High Performance MySQL Optimization" width="229" height="300"></a> <a href="https://amzn.to/3YWugOV" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-216" src="http://devpath.pro/wp-content/uploads/2017/08/51uITkEndxL._SX379_BO1204203200_-229x300.jpg" alt="High Performance Mobile Web" width="229" height="300"></a> <a href="https://amzn.to/3GtUbXd" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-215" src="http://devpath.pro/wp-content/uploads/2017/08/51cGhvwszsL-230x300.jpg" alt="High Performance Web Sites Essential" width="230" height="300"></a> <a href="https://amzn.to/3IcluGP" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-214" src="http://devpath.pro/wp-content/uploads/2017/08/514oWfEBJXL._SX383_BO1204203200_-231x300.jpg" alt="Even Faster Web Sites Performance" width="231" height="300"></a> <a href="https://amzn.to/3i54TtN" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-213" src="http://devpath.pro/wp-content/uploads/2017/08/51FOKng5obL._SY346_-199x300.jpg" alt="Designing Performance Weighing Aesthetic Speed" width="199" height="300"></a> <a href="https://amzn.to/3vnsXex" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-218" src="http://devpath.pro/wp-content/uploads/2017/08/51IaUNQYi-L-1-229x300.jpg" alt="Web Performance Tuning Speeding" width="229" height="300"></a> <a href="https://amzn.to/3hYiJ18" rel="nofollow"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-219" src="http://devpath.pro/wp-content/uploads/2017/08/51jcZN5rqdL-1-229x300.jpg" alt="Performance JavaScript Faster Application Interfaces" width="229" height="300"></a></p>
+<h2>Are you lazy?</h2>
+<h3>Which ones are the most important/common?</h3>
+<p><a href="https://www.xkcd.com/1691/" rel="nofollow"><img loading="lazy" decoding="async" class="size-medium wp-image-220 alignright" src="http://devpath.pro/wp-content/uploads/2017/08/optimization-203x300.png" alt="Strip from XKCD about how premature optimisation is the root of all evil" width="203" height="300"></a> These 5 ones:</p>
+<ul>
+<li>Reduce Page Size (&lt;500Kb)</li>
+<li>Enable (GZip) Compression</li>
+<li>Reduce the number of round trips (&lt;40 per page)</li>
+<li>HTTP Cache Headers (cache long &amp; prosper)</li>
+<li>Structure the page (to improve render &amp; download)
+<ul>
+<li>CSS First</li>
+<li>Javascript last</li>
+</ul>
+</li>
+<li>Even if you apply just those 5 rules…</li>
+<li>Your page download times will drop by ~50%</li>
+<li><em>Premature optimization is the root of all evil — Donald Knuth</em></li>
+</ul>
+<h2>BONUS</h2>
+<h3>Bonus #1</h3>
+<ul>
+<li>https://github.com/davidsonfellipe/awesome-wpo</li>
+</ul>
+<h3>Bonus #2</h3>
+<ul>
+<li>http://lmgtfy.com/?q=web+performance+optimisation</li>
+</ul>
+<h3>Bonus #3</h3>
+
+			</div> <!-- .content -->
+
+			
+				<div class="meta bottom section-inner">
+					<p class="tags"> #<a href="/tag/best-practices" rel="tag">best practices</a> #<a href="/tag/measuring" rel="tag">measuring</a> #<a href="/tag/monitoring" rel="tag">monitoring</a> #<a href="/tag/optimisation" rel="tag">optimisation</a> #<a href="/tag/performance" rel="tag">performance</a> #<a href="/tag/talk" rel="tag">talk</a> #<a href="/tag/web-design" rel="tag">web design</a> </p>
+				</div> <!-- .meta -->
+
+				
+				<div class="post-pagination section-inner">
+
+					<div class="previous-post">
+													<a href="/methodologies/being-really-agile-being-really-smart" rel="prev"><span>Being really agile, Being really smart</span></a>											</div>
+
+					<div class="next-post">
+													<a href="/time-management/practicality-eisenhower-matrix" rel="next"><span>The practicality of the Eisenhower Matrix</span></a>											</div>
+
+				</div><!-- .post-pagination -->
+
+			
+		 <!-- .post -->
+
+					<footer class="site-footer section-inner">
+
+				<p class="copyright">© 2026 <a href="/" class="site-name">Fabio Cicerchia</a></p>
+				
+			</footer> <!-- footer -->
+
+		</article></main>
+		
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mcluhan/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" defer src="/wp-content/plugins/wplegalpages/admin/js/jquery.cookie.min.js?ver=3.5.7" id="wp-legal-pages-jquery-cookie-js"></script>
+<script type="text/javascript" src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" id="mcluhan_global-js-extra">
+/* <![CDATA[ */
+var mcluhan_ajaxpagination = {"ajaxurl":"/wp-admin/admin-ajax.php","query_vars":"{\"page\":\"\",\"name\":\"performance-optimisation-first-talk-ever\",\"category_name\":\"performance\"}"};
+//# sourceURL=mcluhan_global-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/mcluhan/assets/js/global.js?ver=2.1.1" id="mcluhan_global-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://fabiocicerchia.it/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+			
+	</body>
+</html>
